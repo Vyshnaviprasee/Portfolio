@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav id="desktop-nav">
+    <div class="logo">Vyshnavi Prasee</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#profile" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HAMBURGER MENU -->
+  <nav id="hamburger-nav">
+    <div class="logo">Vyshnavi Prasee</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/5.jpg" alt="My profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vyshnavi Prasee</h1>
+      <p class="section__text__p2">Web Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/VYSHNAVI - CV.pdf', '_blank')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://linkedin.com/" target="_blank">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+        </a>
+        <a href="https://github.com/" target="_blank">
+          <img src="./assets/github.png" alt="My Github profile" class="icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1><br>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>1 year <br />UI/UX Development</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>BVoc Web Technology<br />Calicut University</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          Hello! I'm a passionate Web Developer with 1 year of experience in creating dynamic and visually appealing websites. Proficient in HTML, CSS, JavaScript, Tailwind CSS, Python, and Django, I build user-friendly web applications with clean, efficient code and intuitive design. I excel at using Figma for UI/UX design and prototyping, translating ideas into interactive designs. With a BVoc degree in Web Technology from Calicut University, I've worked on various projects, enhancing my skills and understanding of client needs. Let's connect to bring your ideas to life!
+        </p>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers grid-container">
+        <!-- PROJECT 1 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">E-commerce Website</h2>
+          <p class="project-description project-text">An e-commerce site for buying and selling women's fitness outfits and apparel. Developed using HTML, CSS, JavaScript, Python, and Django.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" target ="_blank" onclick="location.href='https://github.com/Vyshnaviprasee/ecart.git'" >
+              Github
+            </button>
+            
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">E-Learning Website</h2>
+          <p class="project-description project-text">A platform for students to enroll in courses with user authentication features. Developed using HTML, CSS, JavaScript, Bootstrap 5, Python, and Django.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" target ="_blank" onclick="location.href='https://github.com/Vyshnaviprasee/Ecommerce.git'">
+              Github
+            </button>
+            
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Fitness Tracker App</h2>
+          <p class="project-description project-text">UI/UX design using Figma with a completed prototype for fitness tracking and diet control. </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/design/kMa84Cwq0J4vq0jOX38VZd/Fitness-Tracker?node-id=0-1&t=DIr0mZA4CvGoktyN-1'">
+              Figma File
+            </button>
+            
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Travel App</h2>
+          <p class="project-description project-text">UI/UX design using Figma with a completed prototype for travel booking.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/design/ZePC5Rw9xPnHNba8nQTMPF/Wanderlust?node-id=120-220&t=yzoMVyE0jFU6eQV0-1'">
+              Figma File
+            </button>
+            
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-5.png" alt="Project 5" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Todo List App</h2>
+          <p class="project-description project-text">A todo list application developed using Python, Django, and Bootstrap 5.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"  onclick="location.href='https://github.com/Vyshnaviprasee/TODO-App.git'">
+              Github
+            </button>     
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+          <p class="project-description project-text">A personal portfolio website developed using HTML, CSS, and JavaScript. </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+          </div>
+        </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:vyshnaviprasee@gmail.com">vyshnaviprasee@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Vyshnavi Prasee. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
