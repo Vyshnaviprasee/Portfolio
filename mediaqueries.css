@@ -110,6 +110,19 @@
     height: 100%;
     width: 100%;
   }
+
+  .contact-icon {
+    height: 1.5rem;
+  }
+
+  .project-btn {
+    font-size: 1rem;
+  }
+
+  .email-icon {
+    height: 1.5rem;
+  }
+
 }
 
 

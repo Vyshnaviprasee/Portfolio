@@ -490,11 +490,14 @@ article .icon {
 
 .contact-icon {
   cursor: default;
+  height: 2.5rem;
 }
 
 .email-icon {
   height: 2.5rem;
 }
+
+
 
 /* FOOTER SECTION */
 
